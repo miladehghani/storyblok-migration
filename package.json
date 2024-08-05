@@ -1,14 +1,16 @@
 {
-  "name": "migration",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "migration:generate": "node generate.mjs",
-    "migration:run": "node run.mjs"
+  "name": "storyblok-migration",
+  "version": "1.0.2",
+  "description": "A tool to migrate storyblok contents to reflect the new blok structure",
+  "main": "index.mjs",
+  "type": "commonjs",
+  "bin":{
+    "storyblok-migration":"bin/index.mjs"
   },
-  "author": "",
+  "scripts": {
+    "start": "node ./lib/index.mjs" 
+  },
+  "author": "Milad Dehghani",
   "license": "ISC",
   "dependencies": {
     "commander": "^12.1.0",
